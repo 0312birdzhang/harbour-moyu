@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: Apache-2.0
+# The legacy Android dictionary includes 黁 with the spelling nun.
+# Retain that syllable alongside Rime's simplified-pinyin dictionary.
+---
+name: moyu_pinyin
+version: '2026.11.11'
+sort: by_weight
+use_preset_vocabulary: false
+import_tables:
+  - ice_8105
+  - ice_base
+  - ice_ext
+  - ice_tencent
+  - ice_others
+  - pinyin_simp
+...
+黁	nun	1

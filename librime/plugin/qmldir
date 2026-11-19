@@ -1,0 +1,3 @@
+module xyz.birdzhang.moyu.ime
+plugin xyz.birdzhang.moyu.ime
+MoyuLayout 1.0 MoyuLayout.js

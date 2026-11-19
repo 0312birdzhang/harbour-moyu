@@ -1,0 +1,8 @@
+[Unit]
+Description=Moyu Rime input backend
+
+[Service]
+Type=dbus
+BusName=xyz.birdzhang.moyu.Rime
+ExecStart=/usr/bin/harbour-moyu-rime
+Restart=on-failure

@@ -1,0 +1,35 @@
+schema:
+  schema_id: moyu_english
+  name: 墨羽英文
+  version: '2026.11.18'
+
+engine:
+  processors:
+    - speller
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - abc_segmentor
+    - fallback_segmentor
+  translators:
+    - table_translator
+  filters:
+    - uniquifier
+
+speller:
+  alphabet: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'-"
+  delimiter: ""
+  algebra:
+    - xform/[A-Z]/\L$0/
+    - derive/^.+$/\U$0/
+    - derive/^./\U$0/
+
+translator:
+  dictionary: moyu_english
+  enable_completion: true
+  enable_sentence: false
+  enable_user_dict: false
+
+menu:
+  page_size: 80

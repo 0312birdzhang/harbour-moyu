@@ -1,0 +1,57 @@
+schema:
+  schema_id: moyu_pinyin
+  name: 墨羽拼音
+  version: '2026.11.11'
+  author:
+    - Souniao IME contributors
+    - Moyu IME contributors
+  dependencies:
+    - moyu_extra
+
+switches:
+  - name: ascii_mode
+    reset: 0
+
+engine:
+  processors:
+    - speller
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - abc_segmentor
+    - fallback_segmentor
+  translators:
+    - script_translator
+    - script_translator@moyu_extra
+  filters:
+    - uniquifier
+
+speller:
+  alphabet: abcdefghijklmnopqrstuvwxyz
+  delimiter: " '"
+  algebra:
+    - abbrev/^([a-z]).+$/$1/
+    - abbrev/^([zcs]h).+$/$1/
+    - derive/^([nl])ue$/$1ve/
+    - derive/^([jqxy])u/$1v/
+
+translator:
+  dictionary: moyu_pinyin
+  prism: moyu_pinyin
+  user_dict: moyu_pinyin
+  enable_user_dict: true
+  enable_sentence: true
+  enable_completion: true
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+
+moyu_extra:
+  dictionary: moyu_extra
+  prism: moyu_extra
+  enable_user_dict: false
+  enable_sentence: false
+  enable_completion: true
+  initial_quality: 2

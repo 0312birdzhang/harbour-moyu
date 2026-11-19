@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=xyz.birdzhang.moyu.Rime
+Exec=/usr/bin/harbour-moyu-rime
+SystemdService=harbour-moyu-rime.service

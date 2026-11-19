@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=harbour-moyu
+Exec=harbour-moyu
+Name=MoyuIME
+Name[zh_CN]=墨羽输入法
+
+[X-Sailjail]
+OrganizationName=xyz.birdzhang.moyu
+ApplicationName=harbour-moyu
+Permissions=Documents;Downloads;MediaIndexing;harbour-moyu
+

@@ -1,0 +1,30 @@
+* Fri Nov 13 2026 0312birdzhang - 0.5.9-1
+- Run keyboard composition and prediction calls in the keyboard process
+- Hand off the shared Rime engine and user dictionary from the standalone service
+- Keep the D-Bus interface available to dictionary management clients
+
+* Fri Nov 13 2026 0312birdzhang - 0.5.8-1
+- Batch composition updates over D-Bus and load Rime candidates on demand
+- Preserve legacy decoder APIs and validate candidate page revisions
+
+* Fri Nov 13 2026 0312birdzhang - 0.5.7-1
+- Resolve InputHandler and TopItem from the Sailfish 5.2 keyboard module.
+- Load module-exported clipboard buttons while retaining legacy file fallbacks.
+- Verify installed keyboard handlers and Chinese commits on Sailfish 5.2.
+
+* Thu Nov 12 2026 0312birdzhang - 0.5.6-1
+- Load clipboard buttons from the system's available keyboard component directory.
+- Keep Pinyin input available when a system clipboard component is missing.
+- Cover clipboard actions and Pinyin input with both handler entry paths.
+
+* Thu Nov 12 2026 0312birdzhang - 0.5.5-1
+- Rename the RPM package to harbour-moyu and replace the previous Moyu package.
+- Install the supplied neon feather icon at 86x86 with transparency.
+- Refresh initial candidates and context predictions through Maliit input updates.
+
+* Thu Nov 12 2026 0312birdzhang - 0.5.4-1
+- Split the Rime Pinyin implementation into Moyu IME.
+- Isolate the package, QML plugin, D-Bus service, settings and user data.
+- Learn user phrases on their fifth committed use and accept manual additions immediately.
+- Show common Chinese candidates for empty input and at the start of a field.
+

@@ -1,0 +1,9 @@
+# English vocabulary from the bundled rime-ice dictionaries.
+---
+name: moyu_english
+version: '2026.11.18'
+sort: by_weight
+import_tables:
+  - en_dicts/en_ext
+  - en_dicts/en
+...

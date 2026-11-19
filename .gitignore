@@ -1,0 +1,11 @@
+*.pro.user
+*.o
+*.list
+*.so
+.vscode
+Makefile
+RPMS/
+.mb2/
+installroot/
+.rime-build/
+

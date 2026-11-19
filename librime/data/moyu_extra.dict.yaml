@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+---
+name: moyu_extra
+version: '1.0'
+sort: by_weight
+use_preset_vocabulary: false
+...
+墨羽	mo yu	1
